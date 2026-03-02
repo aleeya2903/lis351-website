@@ -1,122 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css"/>
-    
-    <title>Aleeya Mohamad Roki's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Aleeya Mohamad Roki's Portfolio</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        Aleeya Mohamad Roki<span class="dot">.</span>
+      </div>
 
-<header>
-    <h1>Aleeya Mohamad Roki</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>I'm Aleeya</h1>
+        <p class="hero-subhead">A Data Science and Information Science Major</p>
 
-<main>
-
-    <!-- Hero section -->
-    <section>
-        <h2>I’m Aleeya, a Data Science and Information Science Major</h2>
-        <p>I create data-driven projects, AI tools, and web applications.</p>
-
-        <img src="images/uwmadison.jpg"
-             alt="University of Wisconsin–Madison iconic Bascom Hall landscape view"
-             width="750">
-
-        <p>
-            <a href="#">Get Started</a>
-        </p>
+        <a class="btn btn-dark" href="#projects">Get Started</a>
+        <a class="btn btn-outline" href="#contact" style="margin-left:10px;">Contact</a>
+      </div>
     </section>
 
-    <!-- features -->
-    <section>
-        <h2>What I Do</h2>
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-lede">Data-driven projects, AI tools, and web applications.</p>
 
-        <article>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="icon">DS</div>
             <h3>Data Science</h3>
             <p>I analyze real-world datasets to uncover patterns and insights.</p>
-        </article>
+          </article>
 
-        <article>
+          <article class="feature">
+            <div class="icon">AI</div>
             <h3>Software & AI</h3>
             <p>I build applications using Python, React, and modern APIs.</p>
-        </article>
+          </article>
 
-        <article>
+          <article class="feature">
+            <div class="icon">R</div>
             <h3>Research & Projects</h3>
             <p>I work on projects ranging from geospatial analysis to AI chatbots.</p>
-        </article>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- featured content -->
-    <section>
-        <h2>Featured Project - Zaya Chatbot</h2>
-
-        <p>
-            Zaya is an AI chatbot I developed during my internship.
-            It detects user intent and provides tailored guidance while
-            logging conversations for analysis.
+    <!-- Featured Project -->
+    <section class="featured" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Project</h2>
+        <p class="section-lede">
+          Zaya is an AI chatbot I developed during my internship. It detects user intent, provides tailored guidance,
+          and logs conversations for analysis.
         </p>
 
-        <img src="images/zaya-chatbot.png"
-             alt="Screenshot of Zaya chatbot web interface"
-             width="750">
+        <div class="media"></div>
+      </div>
     </section>
 
-    <!-- secondary content -->
-    <section>
-        <h2>More About Me</h2>
+    <!-- Secondary -->
+    <section class="secondary" id="experience">
+      <div class="container">
+        <div class="secondary-grid">
+          <article class="card">
+            <div class="card-text">
+              <h3>Experience</h3>
+              <p>I have internship experience in data science and data curation, working with large datasets and analytics.</p>
+              <a class="btn btn-outline" href="#contact">Reach out</a>
+            </div>
+            <div class="card-image img-a" aria-hidden="true"></div>
+          </article>
 
-        <article>
-            <h3>Experience</h3>
-            <p>
-                I have internship experience in data science and data curation,
-                working with large datasets and real-time analytics.
-            </p>
-        </article>
-
-        <article>
-            <h3>Skills</h3>
-            <p>
-                My skills include Python, SQL, R, React, data visualization,
-                machine learning, and cloud tools.
-            </p>
-        </article>
+          <article class="card">
+            <div class="card-text">
+              <h3>Skills</h3>
+              <p>Python, SQL, R, React, data visualization, machine learning, and cloud tools.</p>
+              <a class="btn btn-outline" href="#projects">See projects</a>
+            </div>
+            <div class="card-image img-b" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- call to action -->
-    <section>
-        <h2>Interested in Working Together?</h2>
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <h2 class="section-title">Interested in Working Together?</h2>
+        <p class="section-lede">Email me or connect on LinkedIn/GitHub.</p>
+        <a class="btn btn-dark" href="mailto:mohamadroki@wisc.edu">Contact Me</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2026 Aleeya Mohamad Roki</p>
         <p>
-            <a href="#">Contact Me</a>
+          <a href="mailto:mohamadroki@wisc.edu">mohamadroki@wisc.edu</a>
         </p>
-    </section>
+      </div>
 
-</main>
+      <div class="footer-cols" aria-label="Footer links">
+        <div class="footer-col">
+          <h4>Links</h4>
+          <a href="https://github.com/aleeya2903">GitHub</a>
+          <a href="https://www.linkedin.com/in/aleeya-mohamad-roki-665912215/">LinkedIn</a>
+          <a href="mailto:mohamadroki@wisc.edu">Email</a>
+        </div>
 
-<footer>
-    <p>&copy; 2026 Aleeya Mohamad Roki</p>
-
-    <nav>
-        <ul>
-            <li><a href="https://github.com/aleeya2903">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/aleeya-mohamad-roki-665912215/">LinkedIn</a></li>
-            <li><a href="mailto:mohamadroki@wisc.edu">Email</a></li>
-        </ul>
-    </nav>
-</footer>
-
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
